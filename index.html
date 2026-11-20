@@ -1,0 +1,496 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obesity Awareness</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="badya-logo.png" alt="Badya University Logo">
+            </div>
+
+            <nav>
+                <a href="#home" class="active">Home</a>
+                <a href="#learn">Learn</a>
+                <a href="#about">About Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Homepage -->
+    <main class="hero" id="home">
+        <div class="hero-content">
+            <p class="subtitle">YOUR HEALTH MATTERS</p>
+
+            <h1>
+                Understand Your Health.
+                <br>
+                Take Control of Your Future.
+            </h1>
+
+            <p class="description">
+                Learn more about obesity, understand your BMI,
+                and discover how small healthy choices can
+                make a big difference in your life.
+            </p>
+
+            <button class="start-button" onclick="showPage('age-page')">
+                START NOW →
+            </button>
+        </div>
+    </main>
+
+    <!-- Awareness Quote -->
+    <section class="quote-section">
+        <div class="quote-box">
+            <h2>
+                “Obesity is a chronic disease, not a character flaw.”
+            </h2>
+
+            <p>
+                A message of awareness, understanding and compassion.
+            </p>
+        </div>
+    </section>
+
+    <!-- Learn Section -->
+    <section class="learn-section" id="learn">
+        <div class="learn-container">
+
+            <div class="learn-heading">
+                <p class="subtitle">KNOWLEDGE IS THE FIRST STEP</p>
+
+                <h2>Learn About Obesity</h2>
+
+                <p>
+                    Understanding obesity is an important step toward
+                    better health. Explore the topics below to learn
+                    about its causes, effects, and management.
+                </p>
+            </div>
+
+            <!-- Topic Cards -->
+            <div class="learn-cards">
+
+                <a href="#understanding" class="learn-card">
+                    <div class="card-number">01</div>
+                    <h3>Understanding Obesity</h3>
+                    <p>
+                        Learn what obesity is, how it is defined,
+                        and why it is considered a chronic disease.
+                    </p>
+                    <span class="learn-more">Learn more →</span>
+                </a>
+
+                <a href="#causes" class="learn-card">
+                    <div class="card-number">02</div>
+                    <h3>Causes & Risk Factors</h3>
+                    <p>
+                        Discover the different factors that may
+                        contribute to obesity.
+                    </p>
+                    <span class="learn-more">Learn more →</span>
+                </a>
+
+                <a href="#complications" class="learn-card">
+                    <div class="card-number">03</div>
+                    <h3>Health Complications</h3>
+                    <p>
+                        Understand how obesity may affect different
+                        body systems and overall health.
+                    </p>
+                    <span class="learn-more">Learn more →</span>
+                </a>
+
+                <a href="#management" class="learn-card">
+                    <div class="card-number">04</div>
+                    <h3>Prevention & Management</h3>
+                    <p>
+                        Explore healthy habits and evidence-based
+                        approaches to managing obesity.
+                    </p>
+                    <span class="learn-more">Learn more →</span>
+                </a>
+
+            </div>
+
+            <!-- Topic 1 -->
+            <article class="learning-topic" id="understanding">
+                <p class="topic-label">01 — THE BASICS</p>
+
+                <h2>Understanding Obesity</h2>
+
+                <p>
+                    Obesity is a chronic, complex disease characterized
+                    by excessive or abnormal body fat that may negatively
+                    affect health.
+                </p>
+
+                <h3>How is obesity assessed?</h3>
+
+                <p>
+                    Body Mass Index (BMI) is a screening tool calculated
+                    by dividing a person's weight in kilograms by the
+                    square of their height in meters.
+                </p>
+
+                <div class="info-note">
+                    <strong>Important:</strong>
+                    BMI does not directly measure body fat and should
+                    not be used alone to determine a person's health.
+                    For children and teenagers, BMI must be interpreted
+                    according to age and sex using appropriate growth
+                    charts.
+                </div>
+            </article>
+
+            <!-- Topic 2 -->
+            <article class="learning-topic" id="causes">
+                <p class="topic-label">02 — WHY IT HAPPENS</p>
+
+                <h2>Causes & Risk Factors</h2>
+
+                <p>
+                    Obesity does not have one single cause. It develops
+                    through a complex interaction of biological,
+                    environmental, social, and behavioral factors.
+                </p>
+
+                <div class="topic-points">
+                    <div>
+                        <h3>Genetic Factors</h3>
+                        <p>
+                            Genetics can influence appetite, metabolism,
+                            and how the body stores fat.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>Environmental Factors</h3>
+                        <p>
+                            Food availability, access to safe places
+                            for physical activity, and daily surroundings
+                            can influence health habits.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>Medical & Biological Factors</h3>
+                        <p>
+                            Certain medical conditions, medications,
+                            hormones, and sleep patterns may contribute
+                            to weight changes.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>Lifestyle Factors</h3>
+                        <p>
+                            Eating patterns, physical activity,
+                            sleep, and daily routines can all play
+                            a role.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Topic 3 -->
+            <article class="learning-topic" id="complications">
+                <p class="topic-label">03 — HEALTH IMPACT</p>
+
+                <h2>Health Complications</h2>
+
+                <p>
+                    Obesity may increase the risk of several health
+                    conditions. The effects can differ from one person
+                    to another.
+                </p>
+
+                <div class="topic-points">
+                    <div>
+                        <h3>Type 2 Diabetes</h3>
+                        <p>
+                            Obesity is associated with insulin resistance,
+                            which can increase the risk of type 2 diabetes.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>Cardiovascular Diseases</h3>
+                        <p>
+                            It may increase the risk of high blood pressure,
+                            abnormal blood lipids, and heart disease.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>Joint Problems</h3>
+                        <p>
+                            Increased mechanical stress and other biological
+                            factors may contribute to joint problems,
+                            including osteoarthritis.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>Sleep Problems</h3>
+                        <p>
+                            Obesity is associated with a higher risk
+                            of obstructive sleep apnea.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Topic 4 -->
+            <article class="learning-topic" id="management">
+                <p class="topic-label">04 — TAKING ACTION</p>
+
+                <h2>Prevention & Management</h2>
+
+                <p>
+                    Obesity management is not about quick fixes.
+                    It involves long-term, individualized care and
+                    support from healthcare professionals.
+                </p>
+
+                <div class="topic-points">
+                    <div>
+                        <h3>Balanced Nutrition</h3>
+                        <p>
+                            Choosing a variety of nutritious foods
+                            and developing sustainable eating habits.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>Regular Physical Activity</h3>
+                        <p>
+                            Including enjoyable movement and physical
+                            activity as part of daily life.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>Healthy Sleep Habits</h3>
+                        <p>
+                            Maintaining a regular sleep routine
+                            supports overall health.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>Medical Support</h3>
+                        <p>
+                            Healthcare professionals can help assess
+                            individual needs and discuss appropriate
+                            treatment options.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="info-note">
+                    Every person has different health needs.
+                    Treatment and prevention plans should be
+                    individualized with professional guidance.
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+
+            <p class="subtitle">GET TO KNOW US</p>
+
+            <h2>About Us</h2>
+
+            <p class="about-description">
+                We are a group of first-year medical students at
+                Badya University, brought together by a shared
+                interest in health awareness and medical education.
+            </p>
+
+            <p class="about-description">
+                As part of our academic project, we chose to focus
+                on obesity — an important public health issue that
+                deserves greater understanding and awareness.
+            </p>
+
+            <p class="about-description">
+                Our goal is to make reliable health information
+                easier to understand and accessible to everyone,
+                covering the basics of obesity, its risk factors,
+                possible health complications, and ways to prevent
+                and manage it.
+            </p>
+
+            <div class="about-details">
+                <h3>Badya University</h3>
+                <p>Faculty of Medicine</p>
+                <p>Year 1 Medical Students – Subgroup L1</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- References Section -->
+    <section class="references-section" id="references">
+        <div class="references-container">
+
+            <p class="subtitle">SOURCES & CREDITS</p>
+
+            <h2>References</h2>
+
+            <ul class="references-list">
+                <li>
+                    <a href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight"
+                       target="_blank" rel="noopener noreferrer">
+                        World Health Organization (WHO) – Obesity and Overweight
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.cdc.gov/bmi/adult-calculator/index.html"
+                       target="_blank" rel="noopener noreferrer">
+                        Centers for Disease Control and Prevention (CDC) – Adult BMI
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.cdc.gov/bmi/child-teen-calculator/index.html"
+                       target="_blank" rel="noopener noreferrer">
+                        CDC – Child and Teen BMI
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity"
+                       target="_blank" rel="noopener noreferrer">
+                        National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK) – Adult Overweight and Obesity
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+    <!-- Age and Personal Information -->
+    <section id="age-page" class="form-page hidden">
+        <div class="form-card">
+            <p class="subtitle">STEP 01</p>
+
+            <h1>Let's Get to Know You</h1>
+
+            <p class="description">
+                Please enter your basic information.
+            </p>
+
+            <label for="age">Your Age</label>
+
+            <input
+                type="number"
+                id="age"
+                placeholder="Enter your age"
+                min="1"
+                max="120"
+            >
+
+            <label for="sex">Sex</label>
+
+            <select id="sex">
+                <option value="">Select your sex</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+            </select>
+
+            <button class="start-button" onclick="goToMeasurements()">
+                NEXT →
+            </button>
+        </div>
+    </section>
+
+    <!-- Height and Weight -->
+    <section id="measurements-page" class="form-page hidden">
+        <div class="form-card">
+            <p class="subtitle">STEP 02</p>
+
+            <h1>Your Measurements</h1>
+
+            <p class="description">
+                Please enter your height and weight.
+            </p>
+
+            <label for="height">Height (cm)</label>
+
+            <input
+                type="number"
+                id="height"
+                placeholder="e.g. 170"
+                min="1"
+            >
+
+            <label for="weight">Weight (kg)</label>
+
+            <input
+                type="number"
+                id="weight"
+                placeholder="e.g. 70"
+                min="1"
+            >
+
+            <button class="start-button" onclick="calculateBMI()">
+                CALCULATE BMI →
+            </button>
+        </div>
+    </section>
+
+    <!-- BMI Results -->
+    <section id="results-page" class="form-page hidden">
+        <div class="form-card results-card">
+            <p class="subtitle">YOUR BMI RESULTS</p>
+
+            <h1>Your Health Overview</h1>
+
+            <div class="bmi-number">
+                <span id="bmi-value">0.0</span>
+                <p>Body Mass Index (BMI)</p>
+            </div>
+
+            <h2 id="bmi-category">Your Category</h2>
+
+            <p id="bmi-message" class="description">
+                Your result will appear here.
+            </p>
+
+            <p class="medical-note">
+                BMI is a screening tool, not a medical diagnosis.
+                Consult a healthcare professional for individual advice.
+            </p>
+
+            <button class="start-button" onclick="resetCalculator()">
+                CALCULATE AGAIN ↻
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made by Badya Medical Students – Subgroup L1</p>
+        <p>© 2026 Obesity Awareness Project</p>
+    </footer>
+
+</body>
+</html>

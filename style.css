@@ -1,0 +1,625 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F8FA;
+    color: #17324D;
+}
+
+/* Navigation Bar */
+header {
+    width: 100%;
+    height: 90px;
+    padding: 0 8%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 12px rgba(23, 50, 77, 0.06);
+    position: relative;
+    z-index: 10;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #17324D;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+    padding: 10px 0;
+    position: relative;
+}
+
+nav a:hover,
+nav a.active {
+    color: #279C91;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #279C91;
+    transition: 0.3s;
+}
+
+nav a:hover::after,
+nav a.active::after {
+    width: 100%;
+}
+
+/* Homepage Hero */
+.hero {
+    min-height: calc(75vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 10% 70px;
+    background: linear-gradient(135deg, #EAF5F4, #F5F8FA);
+}
+
+.hero-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.subtitle {
+    color: #279C91;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: clamp(36px, 5vw, 60px);
+    line-height: 1.2;
+    margin-bottom: 25px;
+    color: #17324D;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #647587;
+    max-width: 600px;
+    margin-bottom: 35px;
+}
+
+.hero .description {
+    margin: 0 auto 35px;
+}
+
+/* Buttons */
+.start-button {
+    display: inline-block;
+    background-color: #279C91;
+    color: white;
+    padding: 16px 38px;
+    border-radius: 8px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.start-button:hover {
+    background-color: #17324D;
+    transform: translateY(-3px);
+}
+
+/* Quote Section */
+.quote-section {
+    padding: 15px 8% 75px;
+    margin-top: -50px;
+    background-color: #F5F8FA;
+    display: flex;
+    justify-content: center;
+}
+
+.quote-box {
+    width: 100%;
+    max-width: 950px;
+    padding: 55px 35px;
+    background: #17324D;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(23, 50, 77, 0.12);
+}
+
+.quote-box h2 {
+    color: white;
+    font-size: clamp(22px, 3vw, 34px);
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+.quote-box p {
+    color: #B9D8D5;
+    font-size: 15px;
+    line-height: 1.7;
+    letter-spacing: 0.5px;
+}
+
+/* Learn Section */
+.learn-section {
+    padding: 70px 8%;
+    background-color: #FFFFFF;
+}
+
+.learn-container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.learn-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 45px;
+}
+
+.learn-heading h2 {
+    font-size: clamp(30px, 4vw, 42px);
+    color: #17324D;
+    margin-bottom: 18px;
+}
+
+.learn-heading > p:last-child {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #647587;
+}
+
+/* Learn Cards */
+.learn-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.learn-card {
+    display: block;
+    text-decoration: none;
+    background-color: #F5F8FA;
+    padding: 35px;
+    border-radius: 14px;
+    border: 1px solid #E5ECEF;
+    transition: 0.3s;
+}
+
+.learn-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(23, 50, 77, 0.08);
+}
+
+.card-number {
+    color: #279C91;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.learn-card h3 {
+    color: #17324D;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.learn-card p {
+    color: #647587;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.learn-more {
+    color: #279C91;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Detailed Learning Topics */
+.learning-topic {
+    max-width: 950px;
+    margin: 75px auto 0;
+    padding: 45px;
+    background-color: #F5F8FA;
+    border-radius: 16px;
+    border: 1px solid #E5ECEF;
+    scroll-margin-top: 30px;
+}
+
+.topic-label {
+    color: #279C91;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.learning-topic h2 {
+    color: #17324D;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.learning-topic > p:not(.topic-label) {
+    color: #647587;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 25px;
+}
+
+.learning-topic h3 {
+    color: #17324D;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.info-note {
+    background-color: #EAF5F4;
+    border-left: 4px solid #279C91;
+    padding: 20px;
+    border-radius: 8px;
+    color: #405B6D;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-top: 25px;
+}
+
+.topic-points {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.topic-points > div {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.topic-points p {
+    color: #647587;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* About Us Section */
+.about-section {
+    padding: 85px 8%;
+    background: linear-gradient(135deg, #EAF5F4, #F5F8FA);
+    scroll-margin-top: 20px;
+}
+
+.about-container {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    padding: 55px 60px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(23, 50, 77, 0.06);
+}
+
+.about-container .subtitle {
+    margin-bottom: 15px;
+}
+
+.about-container h2 {
+    font-size: clamp(30px, 4vw, 42px);
+    color: #17324D;
+    margin-bottom: 30px;
+}
+
+.about-description {
+    color: #647587;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.about-details {
+    margin-top: 35px;
+    padding: 25px;
+    background-color: #EAF5F4;
+    border-radius: 12px;
+}
+
+.about-details h3 {
+    color: #17324D;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.about-details p {
+    color: #647587;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* References Section */
+.references-section {
+    padding: 70px 8%;
+    background-color: white;
+}
+
+.references-container {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.references-container .subtitle {
+    margin-bottom: 15px;
+}
+
+.references-container h2 {
+    color: #17324D;
+    font-size: clamp(30px, 4vw, 42px);
+    margin-bottom: 35px;
+}
+
+.references-list {
+    list-style: none;
+    text-align: left;
+    background-color: #F5F8FA;
+    border: 1px solid #E5ECEF;
+    border-radius: 14px;
+    padding: 15px 30px;
+}
+
+.references-list li {
+    padding: 18px 10px;
+    border-bottom: 1px solid #E1E9ED;
+    line-height: 1.7;
+}
+
+.references-list li:last-child {
+    border-bottom: none;
+}
+
+.references-list a {
+    color: #279C91;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.references-list a:hover {
+    color: #17324D;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 28px 20px;
+    background-color: #17324D;
+    color: white;
+    font-size: 13px;
+    line-height: 2;
+}
+
+/* Form Pages */
+.form-page {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #EAF5F4;
+}
+
+.form-card {
+    background: white;
+    width: 100%;
+    max-width: 550px;
+    padding: 45px;
+    border-radius: 16px;
+    box-shadow: 0 10px 35px rgba(23, 50, 77, 0.08);
+}
+
+.form-card h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.form-card label {
+    display: block;
+    margin: 22px 0 10px;
+    font-weight: bold;
+}
+
+.form-card input,
+.form-card select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #DCE5EA;
+    border-radius: 8px;
+    font-size: 16px;
+    background: white;
+}
+
+.form-card .start-button {
+    margin-top: 30px;
+}
+
+/* Results Page */
+.results-card {
+    text-align: center;
+}
+
+.bmi-number {
+    background-color: #EAF5F4;
+    border-radius: 14px;
+    padding: 25px;
+    margin: 25px 0;
+}
+
+.bmi-number span {
+    display: block;
+    font-size: 55px;
+    font-weight: bold;
+    color: #279C91;
+}
+
+.bmi-number p {
+    color: #647587;
+    margin-top: 8px;
+}
+
+#bmi-category {
+    font-size: 25px;
+    color: #17324D;
+    margin-bottom: 15px;
+}
+
+.results-card .description {
+    margin: 0 auto 20px;
+    font-size: 16px;
+}
+
+.medical-note {
+    font-size: 13px;
+    color: #647587;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+/* Hidden Pages */
+.hidden {
+    display: none !important;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    header {
+        height: auto;
+        min-height: 75px;
+        padding: 12px 5%;
+    }
+
+    .logo img {
+        height: 48px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: calc(75vh - 60px);
+        padding: 10px 7% 50px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .form-card {
+        padding: 25px;
+    }
+
+    .quote-section {
+        padding: 10px 6% 50px;
+        margin-top: -50px;
+    }
+
+    .quote-box {
+        padding: 40px 22px;
+    }
+
+    .learn-section {
+        padding: 50px 6%;
+    }
+
+    .learn-cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .learn-card {
+        padding: 28px;
+    }
+
+    .learning-topic {
+        padding: 28px 22px;
+        margin-top: 45px;
+    }
+
+    .learning-topic h2 {
+        font-size: 25px;
+    }
+
+    .topic-points {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .about-section {
+        padding: 55px 6%;
+    }
+
+    .about-container {
+        padding: 35px 22px;
+    }
+
+    .about-description {
+        font-size: 15px;
+    }
+
+    .references-section {
+        padding: 50px 6%;
+    }
+
+    .references-list {
+        padding: 10px 18px;
+    }
+
+    .references-list a {
+        font-size: 14px;
+    }
+}
